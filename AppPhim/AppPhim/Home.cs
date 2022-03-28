@@ -24,8 +24,6 @@ namespace AppPhim
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            MediaPlayer.URL = ("C:\\Users\\Admin\\Downloads\\video.mp4");
-            MediaPlayer.Ctlcontrols.currentPosition = 10;
         }
         private void ActivateButton(object senderBtn, Color color)
         {
@@ -77,12 +75,7 @@ namespace AppPhim
         private void Home_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void lblTitleChildForm_Click(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         private void iconButton_Close_MouseHover(object sender, EventArgs e)
         {
@@ -120,17 +113,33 @@ namespace AppPhim
             OpenChildForm(new Phimbo());
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBoxHome_Click(object sender, EventArgs e)
         {
+            DisableButton();
             if (currentChildForm != null)
             {
                 currentChildForm.Close();
             }
         }
-
-        private void kryptonTextBox1_Enter(object sender, EventArgs e)
+        private void search_text_Enter(object sender, EventArgs e)
         {
             search_text.Text = "";
+        }
+
+        private void iconButton_anime_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.FromArgb(172, 126, 241));
+            OpenChildForm(new Anime());
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Home_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

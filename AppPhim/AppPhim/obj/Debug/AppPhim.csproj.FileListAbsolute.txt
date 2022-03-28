@@ -26,3 +26,5 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\Interop.WMPLib.dll
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Anime.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.CTPhim.resources

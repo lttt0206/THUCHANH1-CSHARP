@@ -37,7 +37,9 @@ namespace AppPhim
 
         }
 
-        
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

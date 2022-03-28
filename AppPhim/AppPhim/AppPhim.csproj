@@ -70,12 +70,26 @@
   <ItemGroup>
     <Compile Include="DanhGia.cs" />
     <Compile Include="DaXem.cs" />
+    <Compile Include="DBSQLServerUtils.cs" />
+    <Compile Include="DBUtils.cs" />
+    <Compile Include="CTPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTPhim.Designer.cs">
+      <DependentUpon>CTPhim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phim.cs" />
     <Compile Include="Phimbo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Phimbo.Designer.cs">
       <DependentUpon>Phimbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anime.Designer.cs">
+      <DependentUpon>Anime.cs</DependentUpon>
     </Compile>
     <Compile Include="Phimmoi.cs">
       <SubType>Form</SubType>
@@ -92,9 +106,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoan.cs" />
+    <Compile Include="Xuly_Data.cs" />
     <Compile Include="YeuThich.cs" />
+    <EmbeddedResource Include="CTPhim.resx">
+      <DependentUpon>CTPhim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Phimbo.resx">
       <DependentUpon>Phimbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anime.resx">
+      <DependentUpon>Anime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phimmoi.resx">
       <DependentUpon>Phimmoi.cs</DependentUpon>
