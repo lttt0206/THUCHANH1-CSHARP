@@ -66,11 +66,12 @@ namespace AppPhim
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.label_main = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.label_trong = new System.Windows.Forms.Label();
             this.panelDesktop.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -94,8 +95,8 @@ namespace AppPhim
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -112,6 +113,7 @@ namespace AppPhim
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.label_trong);
             this.panelDesktop.Controls.Add(this.panel12);
             this.panelDesktop.Controls.Add(this.panel11);
             this.panelDesktop.Controls.Add(this.panel10);
@@ -140,6 +142,7 @@ namespace AppPhim
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(143, 244);
             this.panel12.TabIndex = 4;
+            this.panel12.Click += new System.EventHandler(this.panel12_Click);
             // 
             // label12
             // 
@@ -150,6 +153,7 @@ namespace AppPhim
             this.label12.Size = new System.Drawing.Size(51, 19);
             this.label12.TabIndex = 2;
             this.label12.Text = "label12";
+            this.label12.Click += new System.EventHandler(this.panel12_Click);
             // 
             // pictureBox12
             // 
@@ -158,6 +162,7 @@ namespace AppPhim
             this.pictureBox12.Size = new System.Drawing.Size(143, 206);
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.panel12_Click);
             // 
             // panel11
             // 
@@ -167,6 +172,7 @@ namespace AppPhim
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(143, 244);
             this.panel11.TabIndex = 4;
+            this.panel11.Click += new System.EventHandler(this.panel11_Click);
             // 
             // label11
             // 
@@ -177,6 +183,7 @@ namespace AppPhim
             this.label11.Size = new System.Drawing.Size(51, 19);
             this.label11.TabIndex = 2;
             this.label11.Text = "label11";
+            this.label11.Click += new System.EventHandler(this.panel11_Click);
             // 
             // pictureBox11
             // 
@@ -185,6 +192,7 @@ namespace AppPhim
             this.pictureBox11.Size = new System.Drawing.Size(143, 206);
             this.pictureBox11.TabIndex = 2;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.panel11_Click);
             // 
             // panel10
             // 
@@ -194,6 +202,7 @@ namespace AppPhim
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(143, 244);
             this.panel10.TabIndex = 4;
+            this.panel10.Click += new System.EventHandler(this.panel10_Click);
             // 
             // label10
             // 
@@ -204,6 +213,7 @@ namespace AppPhim
             this.label10.Size = new System.Drawing.Size(51, 19);
             this.label10.TabIndex = 2;
             this.label10.Text = "label10";
+            this.label10.Click += new System.EventHandler(this.panel10_Click);
             // 
             // pictureBox10
             // 
@@ -212,6 +222,7 @@ namespace AppPhim
             this.pictureBox10.Size = new System.Drawing.Size(143, 206);
             this.pictureBox10.TabIndex = 2;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.panel10_Click);
             // 
             // panel9
             // 
@@ -221,6 +232,7 @@ namespace AppPhim
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(143, 244);
             this.panel9.TabIndex = 4;
+            this.panel9.Click += new System.EventHandler(this.panel9_Click);
             // 
             // label9
             // 
@@ -231,6 +243,7 @@ namespace AppPhim
             this.label9.Size = new System.Drawing.Size(44, 19);
             this.label9.TabIndex = 2;
             this.label9.Text = "label9";
+            this.label9.Click += new System.EventHandler(this.panel9_Click);
             // 
             // pictureBox9
             // 
@@ -239,6 +252,7 @@ namespace AppPhim
             this.pictureBox9.Size = new System.Drawing.Size(143, 206);
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.panel9_Click);
             // 
             // panel8
             // 
@@ -248,6 +262,7 @@ namespace AppPhim
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(143, 244);
             this.panel8.TabIndex = 4;
+            this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // label8
             // 
@@ -258,6 +273,7 @@ namespace AppPhim
             this.label8.Size = new System.Drawing.Size(44, 19);
             this.label8.TabIndex = 2;
             this.label8.Text = "label8";
+            this.label8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // pictureBox8
             // 
@@ -266,6 +282,7 @@ namespace AppPhim
             this.pictureBox8.Size = new System.Drawing.Size(143, 206);
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // panel7
             // 
@@ -275,6 +292,7 @@ namespace AppPhim
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(143, 244);
             this.panel7.TabIndex = 3;
+            this.panel7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // label7
             // 
@@ -285,6 +303,7 @@ namespace AppPhim
             this.label7.Size = new System.Drawing.Size(44, 19);
             this.label7.TabIndex = 2;
             this.label7.Text = "label7";
+            this.label7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // pictureBox7
             // 
@@ -293,6 +312,7 @@ namespace AppPhim
             this.pictureBox7.Size = new System.Drawing.Size(143, 206);
             this.pictureBox7.TabIndex = 2;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // panel6
             // 
@@ -302,6 +322,7 @@ namespace AppPhim
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(143, 244);
             this.panel6.TabIndex = 5;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // label6
             // 
@@ -312,6 +333,7 @@ namespace AppPhim
             this.label6.Size = new System.Drawing.Size(44, 19);
             this.label6.TabIndex = 2;
             this.label6.Text = "label6";
+            this.label6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // pictureBox6
             // 
@@ -320,6 +342,7 @@ namespace AppPhim
             this.pictureBox6.Size = new System.Drawing.Size(143, 206);
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // panel5
             // 
@@ -329,6 +352,7 @@ namespace AppPhim
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(143, 244);
             this.panel5.TabIndex = 5;
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // label5
             // 
@@ -339,6 +363,7 @@ namespace AppPhim
             this.label5.Size = new System.Drawing.Size(44, 19);
             this.label5.TabIndex = 2;
             this.label5.Text = "label5";
+            this.label5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // pictureBox5
             // 
@@ -347,6 +372,7 @@ namespace AppPhim
             this.pictureBox5.Size = new System.Drawing.Size(143, 206);
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // panel4
             // 
@@ -356,6 +382,7 @@ namespace AppPhim
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(143, 244);
             this.panel4.TabIndex = 5;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // label4
             // 
@@ -366,6 +393,7 @@ namespace AppPhim
             this.label4.Size = new System.Drawing.Size(44, 19);
             this.label4.TabIndex = 2;
             this.label4.Text = "label4";
+            this.label4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // pictureBox4
             // 
@@ -374,6 +402,7 @@ namespace AppPhim
             this.pictureBox4.Size = new System.Drawing.Size(143, 206);
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // panel3
             // 
@@ -383,6 +412,7 @@ namespace AppPhim
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(143, 244);
             this.panel3.TabIndex = 4;
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // label3
             // 
@@ -393,6 +423,7 @@ namespace AppPhim
             this.label3.Size = new System.Drawing.Size(44, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
+            this.label3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // pictureBox3
             // 
@@ -401,6 +432,7 @@ namespace AppPhim
             this.pictureBox3.Size = new System.Drawing.Size(143, 206);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // panel2
             // 
@@ -410,6 +442,7 @@ namespace AppPhim
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(143, 244);
             this.panel2.TabIndex = 3;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // label2
             // 
@@ -421,6 +454,7 @@ namespace AppPhim
             this.label2.Size = new System.Drawing.Size(44, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // pictureBox2
             // 
@@ -429,6 +463,38 @@ namespace AppPhim
             this.pictureBox2.Size = new System.Drawing.Size(143, 206);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.panel2_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(18, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(143, 244);
+            this.panel1.TabIndex = 0;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 209);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(143, 206);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // lblTitleChildForm
             // 
@@ -449,34 +515,17 @@ namespace AppPhim
             this.label_main.TabIndex = 8;
             this.label_main.Text = "PHIM HOẠT HÌNH";
             // 
-            // pictureBox1
+            // label_trong
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 206);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 209);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(18, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(143, 244);
-            this.panel1.TabIndex = 0;
-            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.label_trong.AutoSize = true;
+            this.label_trong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_trong.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_trong.Location = new System.Drawing.Point(0, 0);
+            this.label_trong.Margin = new System.Windows.Forms.Padding(0);
+            this.label_trong.Name = "label_trong";
+            this.label_trong.Size = new System.Drawing.Size(51, 19);
+            this.label_trong.TabIndex = 3;
+            this.label_trong.Text = "label13";
             // 
             // Anime
             // 
@@ -499,6 +548,7 @@ namespace AppPhim
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Cornsilk;
             this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
@@ -532,9 +582,9 @@ namespace AppPhim
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -582,6 +632,7 @@ namespace AppPhim
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label_trong;
     }
 }
 

@@ -27,10 +27,12 @@ namespace AppPhim
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 label1.Text = list[i].tenphimtv;
                 i++;
+                label_trong.Hide();
             }
             else
             {
                 label1.Text = "";
+                label_trong.Text = "Chưa có dữ liệu phim";
             }
 
             if (list.Count > i + 1)
@@ -172,11 +174,146 @@ namespace AppPhim
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            Xuly_Data s = new Xuly_Data();
-            List<Phim> list = s.sqlGetPhim("Anime");
-            CTPhim ct = new CTPhim();
-            ct.Message = list[0].idphim.ToString();
-            ct.Show();
+            if (!label1.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[0].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            if (!label2.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[1].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            if (!label3.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[2].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            if (!label4.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[3].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel12_Click(object sender, EventArgs e)
+        {
+            if (!label12.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[11].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            if (!label5.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[4].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            if (!label6.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[5].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            if (!label7.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[6].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            if (!label8.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[7].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel9_Click(object sender, EventArgs e)
+        {
+            if (!label9.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[9].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel10_Click(object sender, EventArgs e)
+        {
+            if (!label10.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[9].idphim.ToString();
+                ct.Show();
+            }
+        }
+
+        private void panel11_Click(object sender, EventArgs e)
+        {
+            if (!label11.Text.Equals(""))
+            {
+                Xuly_Data s = new Xuly_Data();
+                List<Phim> list = s.sqlGetPhim("Anime");
+                CTPhim ct = new CTPhim();
+                ct.Message = list[10].idphim.ToString();
+                ct.Show();
+            }
         }
     }
 }

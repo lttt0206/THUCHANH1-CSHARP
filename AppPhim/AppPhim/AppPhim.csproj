@@ -68,6 +68,42 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chieurap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chieurap.Designer.cs">
+      <DependentUpon>Chieurap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phimbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phimbo.Designer.cs">
+      <DependentUpon>Phimbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phimmoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phimmoi.Designer.cs">
+      <DependentUpon>Phimmoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TVShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVShow.Designer.cs">
+      <DependentUpon>TVShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phimle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phimle.Designer.cs">
+      <DependentUpon>Phimle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemPhim.Designer.cs">
+      <DependentUpon>XemPhim.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhGia.cs" />
     <Compile Include="DaXem.cs" />
     <Compile Include="DBSQLServerUtils.cs" />
@@ -79,23 +115,11 @@
       <DependentUpon>CTPhim.cs</DependentUpon>
     </Compile>
     <Compile Include="Phim.cs" />
-    <Compile Include="Phimbo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Phimbo.Designer.cs">
-      <DependentUpon>Phimbo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Anime.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Anime.Designer.cs">
       <DependentUpon>Anime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Phimmoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Phimmoi.Designer.cs">
-      <DependentUpon>Phimmoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -108,17 +132,29 @@
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="Xuly_Data.cs" />
     <Compile Include="YeuThich.cs" />
-    <EmbeddedResource Include="CTPhim.resx">
-      <DependentUpon>CTPhim.cs</DependentUpon>
+    <EmbeddedResource Include="Chieurap.resx">
+      <DependentUpon>Chieurap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phimbo.resx">
       <DependentUpon>Phimbo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Anime.resx">
-      <DependentUpon>Anime.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Phimmoi.resx">
       <DependentUpon>Phimmoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVShow.resx">
+      <DependentUpon>TVShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phimle.resx">
+      <DependentUpon>Phimle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemPhim.resx">
+      <DependentUpon>XemPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTPhim.resx">
+      <DependentUpon>CTPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anime.resx">
+      <DependentUpon>Anime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

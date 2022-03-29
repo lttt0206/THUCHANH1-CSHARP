@@ -37,10 +37,10 @@ namespace AppPhim
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.search_text = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.iconButton_mini = new FontAwesome.Sharp.IconButton();
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton_account = new FontAwesome.Sharp.IconButton();
             this.iconButton_tvshow = new FontAwesome.Sharp.IconButton();
             this.iconButton_anime = new FontAwesome.Sharp.IconButton();
@@ -140,6 +140,24 @@ namespace AppPhim
             this.panel1.Size = new System.Drawing.Size(984, 22);
             this.panel1.TabIndex = 7;
             // 
+            // iconButton7
+            // 
+            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton7.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButton7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconButton7.IconColor = System.Drawing.Color.White;
+            this.iconButton7.IconSize = 25;
+            this.iconButton7.Location = new System.Drawing.Point(928, 88);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Rotation = 0D;
+            this.iconButton7.Size = new System.Drawing.Size(38, 39);
+            this.iconButton7.TabIndex = 6;
+            this.iconButton7.UseVisualStyleBackColor = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AppPhim.Properties.Resources.Surrender__2_;
@@ -194,24 +212,6 @@ namespace AppPhim
             this.iconButton_Close.MouseLeave += new System.EventHandler(this.iconButton_Close_MouseLeave);
             this.iconButton_Close.MouseHover += new System.EventHandler(this.iconButton_Close_MouseHover);
             // 
-            // iconButton7
-            // 
-            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton7.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
-            this.iconButton7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconButton7.IconColor = System.Drawing.Color.White;
-            this.iconButton7.IconSize = 25;
-            this.iconButton7.Location = new System.Drawing.Point(928, 88);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Rotation = 0D;
-            this.iconButton7.Size = new System.Drawing.Size(38, 39);
-            this.iconButton7.TabIndex = 6;
-            this.iconButton7.UseVisualStyleBackColor = false;
-            // 
             // iconButton_account
             // 
             this.iconButton_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -248,6 +248,7 @@ namespace AppPhim
             this.iconButton_tvshow.TabIndex = 4;
             this.iconButton_tvshow.Text = "TV Show";
             this.iconButton_tvshow.UseVisualStyleBackColor = false;
+            this.iconButton_tvshow.Click += new System.EventHandler(this.iconButton_tvshow_Click);
             // 
             // iconButton_anime
             // 
@@ -287,6 +288,7 @@ namespace AppPhim
             this.iconButton_chieurap.TabIndex = 3;
             this.iconButton_chieurap.Text = "Chiếu rạp";
             this.iconButton_chieurap.UseVisualStyleBackColor = false;
+            this.iconButton_chieurap.Click += new System.EventHandler(this.iconButton_chieurap_Click);
             // 
             // iconButton_phimle
             // 
@@ -306,6 +308,7 @@ namespace AppPhim
             this.iconButton_phimle.TabIndex = 3;
             this.iconButton_phimle.Text = "Phim lẻ";
             this.iconButton_phimle.UseVisualStyleBackColor = false;
+            this.iconButton_phimle.Click += new System.EventHandler(this.iconButton_phimle_Click);
             // 
             // iconButton_phimbo
             // 

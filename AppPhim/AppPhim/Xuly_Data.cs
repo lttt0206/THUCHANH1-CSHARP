@@ -46,12 +46,34 @@ namespace AppPhim
                 p.idphim = Convert.ToInt32(id);
                 p.tenphimtv = reader["tenphimtv"].ToString();
                 p.tenphimta = reader["tenphimta"].ToString();
+                p.danhmuc = reader["danhmuc"].ToString();
+                p.daodien = reader["daodien"].ToString();
+                p.dienvien = reader["dienvien"].ToString();
+                p.linkphim = reader["linkphim"].ToString();
+                p.luotxem = Convert.ToInt32(reader["luotxem"]);
+                p.yeuthich = Convert.ToInt32(reader["yeuthich"]);
+                p.sao = Convert.ToInt32(reader["sao"]);
+                p.phathanh = Convert.ToInt32(reader["phathanh"]);
+                p.theloai = reader["theloai"].ToString();
+                p.thoiluong = reader["thoiluong"].ToString();
+                p.mota = reader["mota"].ToString();
                 p.hinhanh = reader["hinhanh"].ToString();
                 reader.Close();
             }                           
             conn.Close();
             return p;
         }
-
+        public void tangluotxem(int id, int luotxem)
+        {
+            luotxem += 1;
+            SqlConnection conn = DBUtils.GetDBConnection();
+            conn.Open();
+            string query = "update Phim set luotxem=@sl where idphim=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("sl", luotxem);
+            var tmp = cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }

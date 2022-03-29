@@ -1,7 +1,7 @@
 ﻿
 namespace AppPhim
 {
-    partial class Phimbo
+    partial class Chieurap
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace AppPhim
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Phimbo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chieurap));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label_trong = new System.Windows.Forms.Label();
@@ -523,11 +523,11 @@ namespace AppPhim
             this.label_main.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label_main.Location = new System.Drawing.Point(12, 0);
             this.label_main.Name = "label_main";
-            this.label_main.Size = new System.Drawing.Size(106, 31);
+            this.label_main.Size = new System.Drawing.Size(185, 31);
             this.label_main.TabIndex = 8;
-            this.label_main.Text = "PHIM BỘ";
+            this.label_main.Text = "PHIM CHIẾU RẠP";
             // 
-            // Phimbo
+            // Chieurap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -542,7 +542,7 @@ namespace AppPhim
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Phimbo";
+            this.Name = "Chieurap";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -38,8 +38,18 @@ namespace AppPhim
             //label2.Text = id;
             label2.Text = p.tenphimtv;
             label3.Text = p.tenphimta;
+            label4.Text = "Home > " + p.danhmuc;
+            theloai.Text = p.theloai;
+            thoiluong.Text = p.thoiluong;
+            phathanh.Text = p.phathanh.ToString();
+            daodien.Text = p.daodien;
+            dienvien.Text = p.dienvien;
+            sosao.Text = p.sao.ToString();
+            luotxem.Text = p.luotxem.ToString();
+            luotthich.Text = p.yeuthich.ToString();
             pictureBox1.ImageLocation = p.hinhanh;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            richTextBox_mota.Text = p.mota;
         }        
 
         private void iconButton_Close_MouseHover(object sender, EventArgs e)
@@ -49,7 +59,18 @@ namespace AppPhim
 
         private void iconButton_Close_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            string message = "Do you want to close this window?";
+            string title = "Close Window";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            {
+                // Do something  
+            }
         }
 
         private void iconButton_mini_Click(object sender, EventArgs e)
@@ -72,5 +93,22 @@ namespace AppPhim
             iconButton_mini.BackColor = Color.FromArgb(35, 40, 52);
         }
 
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.tangluotxem(p.idphim, p.luotxem);
+            luotxem.Text = (p.luotxem + 1).ToString();
+            XemPhim ct = new XemPhim();
+            ct.Message = p.idphim.ToString();
+            ct.Show();
+            this.Close();
+        }
     }
 }

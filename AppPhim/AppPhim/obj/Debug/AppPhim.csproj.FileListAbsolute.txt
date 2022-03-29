@@ -28,3 +28,7 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.csproj.ResolveComReference.cache
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Anime.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.CTPhim.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.XemPhim.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Chieurap.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.TVShow.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Phimle.resources

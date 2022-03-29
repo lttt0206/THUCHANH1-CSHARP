@@ -84,7 +84,19 @@ namespace AppPhim
 
         private void iconButton_Close_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            string message = "Do you want to close this window?";
+            string title = "Close Window";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                // Do something  
+            }
+            
         }
 
         private void iconButton_mini_Click(object sender, EventArgs e)
@@ -140,6 +152,24 @@ namespace AppPhim
         private void Home_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton_phimle_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.FromArgb(172, 126, 241));
+            OpenChildForm(new Phimle());
+        }
+
+        private void iconButton_chieurap_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.FromArgb(172, 126, 241));
+            OpenChildForm(new Chieurap());
+        }
+
+        private void iconButton_tvshow_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.FromArgb(172, 126, 241));
+            OpenChildForm(new TVShow());
         }
     }
 }

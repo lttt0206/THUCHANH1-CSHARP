@@ -19,7 +19,7 @@ namespace AppPhim
         public string hinhanh { get; set; }
         public string linkphim { get; set; }
         public int phathanh { get; set; }
-        public int thoiluong { get; set; }
+        public string thoiluong { get; set; }
         public int sao { get; set; }
         public int luotxem { get; set; }
         public int yeuthich { get; set; }
