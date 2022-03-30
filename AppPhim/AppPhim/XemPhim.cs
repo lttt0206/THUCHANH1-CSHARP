@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using FontAwesome.Sharp;
+using Tulpep.NotificationWindow;
 
 namespace AppPhim
 {
@@ -37,7 +38,6 @@ namespace AppPhim
             label1.Hide();
             //label2.Text = id;
             label2.Text = p.tenphimtv;
-            sosao.Text = p.sao.ToString();
             MediaPlayer.URL = p.linkphim;
         }
 
@@ -47,22 +47,9 @@ namespace AppPhim
         }
 
         private void iconButton_Close_Click(object sender, EventArgs e)
-        {
-            string message = "Do you want to close this window?";
-            string title = "Close Window";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons);
-            if (result == DialogResult.Yes)
-            {
-                MediaPlayer.Ctlcontrols.pause();
-                this.Close();
-            }
-            else
-            {
-                // Do something  
-            }
-            
-            //this.Close(); 
+        {                   
+            MediaPlayer.Ctlcontrols.pause();
+            this.Close();
         }
 
         private void iconButton_mini_Click(object sender, EventArgs e)
@@ -169,7 +156,7 @@ namespace AppPhim
             sao3.IconColor = Color.FromArgb(252, 252, 0);
             sao4.IconChar = IconChar.Star;
             sao4.IconColor = Color.FromArgb(252, 252, 0);
-            sosao.Text = "3";
+            sosao.Text = "4";
         }
 
         private void sao4_MouseLeave(object sender, EventArgs e)
@@ -216,8 +203,124 @@ namespace AppPhim
         }
 
         private void MediaPlayer_ClickEvent(object sender, AxWMPLib._WMPOCXEvents_ClickEvent e)
+        {            
+            MediaPlayer.Ctlcontrols.pause();
+        }
+
+        private void MediaPlayer_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sao4_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.danhgiasao(p.idphim, p.sao, p.luotdanhgia, 4);
+            Notification ct = new Notification();
+            ct.Message = "Cảm ơn đã đánh giá";
+            ct.Show();
+            label3.Hide();
+            sosao.Hide();
+            sao1.Hide();
+            sao2.Hide();
+            sao3.Hide();
+            sao4.Hide();
+            sao5.Hide();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
         {
             MediaPlayer.Ctlcontrols.pause();
+            Home h = new Home();
+            h.Show();
+            this.Close();
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.tangluotthich(p.idphim, p.yeuthich);
+            s.themyeuthich(p.idphim);
+            Notification ct = new Notification();
+            ct.Message = "Đã thêm vào yêu thích";
+            ct.Show();            
+            kryptonButton1.Hide();
+        }
+
+        private void sao1_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.danhgiasao(p.idphim, p.sao, p.luotdanhgia, 1);
+            Notification ct = new Notification();
+            ct.Message = "Cảm ơn đã đánh giá";
+            ct.Show();
+            label3.Hide();
+            sosao.Hide();
+            sao1.Hide();
+            sao2.Hide();
+            sao3.Hide();
+            sao4.Hide();
+            sao5.Hide();
+        }
+
+        private void sao2_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.danhgiasao(p.idphim, p.sao, p.luotdanhgia, 2);
+            Notification ct = new Notification();
+            ct.Message = "Cảm ơn đã đánh giá";
+            ct.Show();
+            label3.Hide();
+            sosao.Hide();
+            sao1.Hide();
+            sao2.Hide();
+            sao3.Hide();
+            sao4.Hide();
+            sao5.Hide();
+        }
+
+        private void sao3_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.danhgiasao(p.idphim, p.sao, p.luotdanhgia, 3);
+            Notification ct = new Notification();
+            ct.Message = "Cảm ơn đã đánh giá";
+            ct.Show();
+            label3.Hide();
+            sosao.Hide();
+            sao1.Hide();
+            sao2.Hide();
+            sao3.Hide();
+            sao4.Hide();
+            sao5.Hide();
+        }
+
+        private void sao5_Click(object sender, EventArgs e)
+        {
+            string id = label1.Text;
+            Xuly_Data s = new Xuly_Data();
+            Phim p = s.sqlPhim(id);
+            s.danhgiasao(p.idphim, p.sao, p.luotdanhgia, 5);
+            Notification ct = new Notification();
+            ct.Message = "Cảm ơn đã đánh giá";
+            ct.Show();
+            label3.Hide();
+            sosao.Hide();
+            sao1.Hide();
+            sao2.Hide();
+            sao3.Hide();
+            sao4.Hide();
+            sao5.Hide();
         }
     }
 }

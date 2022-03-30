@@ -1,7 +1,7 @@
 ﻿
 namespace AppPhim
 {
-    partial class Chieurap
+    partial class Timkiem
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace AppPhim
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chieurap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Timkiem));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label_trong = new System.Windows.Forms.Label();
@@ -72,6 +72,7 @@ namespace AppPhim
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.label_main = new System.Windows.Forms.Label();
+            this.tukhoa = new System.Windows.Forms.Label();
             this.panelDesktop.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -138,7 +139,7 @@ namespace AppPhim
             // 
             this.label_trong.AutoSize = true;
             this.label_trong.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_trong.Location = new System.Drawing.Point(13, 9);
+            this.label_trong.Location = new System.Drawing.Point(14, 10);
             this.label_trong.Margin = new System.Windows.Forms.Padding(0);
             this.label_trong.Name = "label_trong";
             this.label_trong.Size = new System.Drawing.Size(51, 19);
@@ -522,17 +523,29 @@ namespace AppPhim
             this.label_main.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label_main.Location = new System.Drawing.Point(12, 0);
             this.label_main.Name = "label_main";
-            this.label_main.Size = new System.Drawing.Size(185, 31);
+            this.label_main.Size = new System.Drawing.Size(111, 31);
             this.label_main.TabIndex = 8;
-            this.label_main.Text = "PHIM CHIẾU RẠP";
+            this.label_main.Text = "TÌM KIẾM";
             // 
-            // Chieurap
+            // tukhoa
+            // 
+            this.tukhoa.AutoSize = true;
+            this.tukhoa.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tukhoa.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.tukhoa.Location = new System.Drawing.Point(120, 0);
+            this.tukhoa.Name = "tukhoa";
+            this.tukhoa.Size = new System.Drawing.Size(111, 31);
+            this.tukhoa.TabIndex = 9;
+            this.tukhoa.Text = "TÌM KIẾM";
+            // 
+            // Timkiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(964, 541);
+            this.Controls.Add(this.tukhoa);
             this.Controls.Add(this.label_main);
             this.Controls.Add(this.lblTitleChildForm);
             this.Controls.Add(this.panelDesktop);
@@ -541,7 +554,7 @@ namespace AppPhim
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Chieurap";
+            this.Name = "Timkiem";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -632,6 +645,7 @@ namespace AppPhim
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_trong;
+        private System.Windows.Forms.Label tukhoa;
     }
 }
 

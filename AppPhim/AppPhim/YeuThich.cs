@@ -8,7 +8,7 @@ namespace AppPhim
 {
     class YeuThich
     {
-        public int idtaikhoan { get; set; }
+        public int idyeuthich { get; set; }
         public int idphim { get; set; }
     }
 }

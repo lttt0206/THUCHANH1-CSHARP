@@ -21,7 +21,7 @@ namespace AppPhim
             List<Phim> list = s.sqlGetPhim("Phimmoi");
             int i = 0;
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox1.ImageLocation = list[i].hinhanh;
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -35,7 +35,7 @@ namespace AppPhim
                 label_trong.Text = "Chưa có dữ liệu phim";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox2.ImageLocation = list[i].hinhanh;
                 pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -47,7 +47,7 @@ namespace AppPhim
                 label2.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox3.ImageLocation = list[i].hinhanh;
                 pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -59,7 +59,7 @@ namespace AppPhim
                 label3.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox4.ImageLocation = list[i].hinhanh;
                 pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@ namespace AppPhim
                 label4.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox5.ImageLocation = list[i].hinhanh;
                 pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -83,7 +83,7 @@ namespace AppPhim
                 label5.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox6.ImageLocation = list[i].hinhanh;
                 pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -95,7 +95,7 @@ namespace AppPhim
                 label6.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox7.ImageLocation = list[i].hinhanh;
                 pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -107,7 +107,7 @@ namespace AppPhim
                 label7.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox8.ImageLocation = list[i].hinhanh;
                 pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -119,7 +119,7 @@ namespace AppPhim
                 label8.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox9.ImageLocation = list[i].hinhanh;
                 pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -131,7 +131,7 @@ namespace AppPhim
                 label9.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox10.ImageLocation = list[i].hinhanh;
                 pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -143,7 +143,7 @@ namespace AppPhim
                 label10.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox11.ImageLocation = list[i].hinhanh;
                 pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -155,7 +155,7 @@ namespace AppPhim
                 label11.Text = "";
             }
 
-            if (list.Count > i + 1)
+            if (list.Count > i)
             {
                 pictureBox12.ImageLocation = list[i].hinhanh;
                 pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;

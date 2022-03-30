@@ -1,7 +1,7 @@
 ﻿
 namespace AppPhim
 {
-    partial class Chieurap
+    partial class TaikhoanUI
     {
         /// <summary>
         /// Required designer variable.
@@ -30,10 +30,10 @@ namespace AppPhim
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chieurap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaikhoanUI));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label_trong = new System.Windows.Forms.Label();
+            this.label_main = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -50,6 +50,7 @@ namespace AppPhim
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -68,10 +69,11 @@ namespace AppPhim
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.label_main = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panelDesktop.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -113,7 +115,10 @@ namespace AppPhim
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Controls.Add(this.label_trong);
+            this.panelDesktop.Controls.Add(this.label14);
+            this.panelDesktop.Controls.Add(this.label15);
+            this.panelDesktop.Controls.Add(this.label16);
+            this.panelDesktop.Controls.Add(this.label_main);
             this.panelDesktop.Controls.Add(this.panel12);
             this.panelDesktop.Controls.Add(this.panel11);
             this.panelDesktop.Controls.Add(this.panel10);
@@ -129,29 +134,29 @@ namespace AppPhim
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktop.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 40);
+            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(964, 501);
+            this.panelDesktop.Size = new System.Drawing.Size(964, 541);
             this.panelDesktop.TabIndex = 1;
             // 
-            // label_trong
+            // label_main
             // 
-            this.label_trong.AutoSize = true;
-            this.label_trong.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_trong.Location = new System.Drawing.Point(13, 9);
-            this.label_trong.Margin = new System.Windows.Forms.Padding(0);
-            this.label_trong.Name = "label_trong";
-            this.label_trong.Size = new System.Drawing.Size(51, 19);
-            this.label_trong.TabIndex = 3;
-            this.label_trong.Text = "label13";
+            this.label_main.AutoSize = true;
+            this.label_main.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_main.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label_main.Location = new System.Drawing.Point(16, 268);
+            this.label_main.Name = "label_main";
+            this.label_main.Size = new System.Drawing.Size(145, 27);
+            this.label_main.TabIndex = 8;
+            this.label_main.Text = "XEM GẦN ĐÂY";
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.label12);
             this.panel12.Controls.Add(this.pictureBox12);
-            this.panel12.Location = new System.Drawing.Point(817, 251);
+            this.panel12.Location = new System.Drawing.Point(817, 298);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(143, 244);
+            this.panel12.Size = new System.Drawing.Size(143, 235);
             this.panel12.TabIndex = 4;
             this.panel12.Click += new System.EventHandler(this.panel12_Click);
             // 
@@ -179,9 +184,9 @@ namespace AppPhim
             // 
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.pictureBox11);
-            this.panel11.Location = new System.Drawing.Point(655, 251);
+            this.panel11.Location = new System.Drawing.Point(655, 298);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(143, 244);
+            this.panel11.Size = new System.Drawing.Size(143, 235);
             this.panel11.TabIndex = 4;
             this.panel11.Click += new System.EventHandler(this.panel11_Click);
             // 
@@ -209,9 +214,9 @@ namespace AppPhim
             // 
             this.panel10.Controls.Add(this.label10);
             this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Location = new System.Drawing.Point(493, 251);
+            this.panel10.Location = new System.Drawing.Point(493, 298);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(143, 244);
+            this.panel10.Size = new System.Drawing.Size(143, 235);
             this.panel10.TabIndex = 4;
             this.panel10.Click += new System.EventHandler(this.panel10_Click);
             // 
@@ -239,9 +244,9 @@ namespace AppPhim
             // 
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Location = new System.Drawing.Point(335, 251);
+            this.panel9.Location = new System.Drawing.Point(335, 298);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(143, 244);
+            this.panel9.Size = new System.Drawing.Size(143, 235);
             this.panel9.TabIndex = 4;
             this.panel9.Click += new System.EventHandler(this.panel9_Click);
             // 
@@ -269,9 +274,9 @@ namespace AppPhim
             // 
             this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.pictureBox8);
-            this.panel8.Location = new System.Drawing.Point(176, 251);
+            this.panel8.Location = new System.Drawing.Point(176, 298);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(143, 244);
+            this.panel8.Size = new System.Drawing.Size(143, 235);
             this.panel8.TabIndex = 4;
             this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
@@ -299,11 +304,21 @@ namespace AppPhim
             // 
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Location = new System.Drawing.Point(18, 251);
+            this.panel7.Location = new System.Drawing.Point(18, 298);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(143, 244);
+            this.panel7.Size = new System.Drawing.Size(143, 235);
             this.panel7.TabIndex = 3;
             this.panel7.Click += new System.EventHandler(this.panel7_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(298, 370);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(61, 22);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "label14";
             // 
             // label7
             // 
@@ -329,9 +344,9 @@ namespace AppPhim
             // 
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Location = new System.Drawing.Point(817, 3);
+            this.panel6.Location = new System.Drawing.Point(817, 30);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(143, 244);
+            this.panel6.Size = new System.Drawing.Size(143, 235);
             this.panel6.TabIndex = 5;
             this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
@@ -359,9 +374,9 @@ namespace AppPhim
             // 
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(655, 3);
+            this.panel5.Location = new System.Drawing.Point(655, 30);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(143, 244);
+            this.panel5.Size = new System.Drawing.Size(143, 235);
             this.panel5.TabIndex = 5;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             // 
@@ -389,9 +404,9 @@ namespace AppPhim
             // 
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(493, 3);
+            this.panel4.Location = new System.Drawing.Point(493, 30);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(143, 244);
+            this.panel4.Size = new System.Drawing.Size(143, 235);
             this.panel4.TabIndex = 5;
             this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
@@ -419,9 +434,9 @@ namespace AppPhim
             // 
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(335, 3);
+            this.panel3.Location = new System.Drawing.Point(335, 30);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(143, 244);
+            this.panel3.Size = new System.Drawing.Size(143, 235);
             this.panel3.TabIndex = 4;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
             // 
@@ -449,9 +464,9 @@ namespace AppPhim
             // 
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(176, 3);
+            this.panel2.Location = new System.Drawing.Point(176, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(143, 244);
+            this.panel2.Size = new System.Drawing.Size(143, 235);
             this.panel2.TabIndex = 3;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
@@ -480,11 +495,21 @@ namespace AppPhim
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(18, 3);
+            this.panel1.Location = new System.Drawing.Point(18, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(143, 244);
+            this.panel1.Size = new System.Drawing.Size(143, 235);
             this.panel1.TabIndex = 0;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(298, 118);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(61, 22);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "label15";
             // 
             // label1
             // 
@@ -515,25 +540,24 @@ namespace AppPhim
             this.lblTitleChildForm.Size = new System.Drawing.Size(0, 13);
             this.lblTitleChildForm.TabIndex = 2;
             // 
-            // label_main
+            // label16
             // 
-            this.label_main.AutoSize = true;
-            this.label_main.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_main.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label_main.Location = new System.Drawing.Point(12, 0);
-            this.label_main.Name = "label_main";
-            this.label_main.Size = new System.Drawing.Size(185, 31);
-            this.label_main.TabIndex = 8;
-            this.label_main.Text = "PHIM CHIẾU RẠP";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label16.Location = new System.Drawing.Point(16, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(250, 27);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "ĐÃ THÊM VÀO YÊU THÍCH";
             // 
-            // Chieurap
+            // TaikhoanUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(964, 541);
-            this.Controls.Add(this.label_main);
             this.Controls.Add(this.lblTitleChildForm);
             this.Controls.Add(this.panelDesktop);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -541,7 +565,7 @@ namespace AppPhim
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Chieurap";
+            this.Name = "TaikhoanUI";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -631,7 +655,9 @@ namespace AppPhim
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label_trong;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }
 

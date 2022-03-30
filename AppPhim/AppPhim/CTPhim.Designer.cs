@@ -42,7 +42,6 @@ namespace AppPhim
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label4 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.luotxem = new System.Windows.Forms.Label();
@@ -68,6 +67,8 @@ namespace AppPhim
             this.thoiluong = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox_mota = new System.Windows.Forms.RichTextBox();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.themyeuthich = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -162,11 +163,12 @@ namespace AppPhim
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(35, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(267, 354);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -182,17 +184,18 @@ namespace AppPhim
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(319, 23);
+            this.label2.Location = new System.Drawing.Point(319, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 39);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(322, 66);
+            this.label3.Location = new System.Drawing.Point(322, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 22);
             this.label3.TabIndex = 3;
@@ -200,10 +203,10 @@ namespace AppPhim
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(326, 140);
+            this.kryptonButton1.Location = new System.Drawing.Point(326, 132);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
-            this.kryptonButton1.Size = new System.Drawing.Size(147, 45);
+            this.kryptonButton1.Size = new System.Drawing.Size(159, 52);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
@@ -211,7 +214,7 @@ namespace AppPhim
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonButton1.StateCommon.Border.Rounding = 10;
+            this.kryptonButton1.StateCommon.Border.Rounding = 12;
             this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(81)))), ((int)(((byte)(9)))));
             this.kryptonButton1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -222,19 +225,9 @@ namespace AppPhim
             this.kryptonButton1.Values.Text = "PLAY";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
-            // 
             // panelDesktop
             // 
-            this.panelDesktop.Controls.Add(this.label4);
+            this.panelDesktop.Controls.Add(this.themyeuthich);
             this.panelDesktop.Controls.Add(this.label7);
             this.panelDesktop.Controls.Add(this.luotxem);
             this.panelDesktop.Controls.Add(this.iconButton1);
@@ -267,17 +260,18 @@ namespace AppPhim
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktop.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 39);
+            this.panelDesktop.Location = new System.Drawing.Point(0, 59);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(0);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(984, 602);
+            this.panelDesktop.Size = new System.Drawing.Size(984, 582);
             this.panelDesktop.TabIndex = 1;
+            this.panelDesktop.Click += new System.EventHandler(this.iconButton_Close_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(536, 102);
+            this.label7.Location = new System.Drawing.Point(536, 94);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 23);
             this.label7.TabIndex = 34;
@@ -287,11 +281,11 @@ namespace AppPhim
             // 
             this.luotxem.AutoSize = true;
             this.luotxem.Font = new System.Drawing.Font("Open Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.luotxem.Location = new System.Drawing.Point(509, 102);
+            this.luotxem.Location = new System.Drawing.Point(512, 94);
             this.luotxem.Name = "luotxem";
-            this.luotxem.Size = new System.Drawing.Size(33, 23);
+            this.luotxem.Size = new System.Drawing.Size(28, 23);
             this.luotxem.TabIndex = 33;
-            this.luotxem.Text = "0.0";
+            this.luotxem.Text = "00";
             this.luotxem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // iconButton1
@@ -305,7 +299,7 @@ namespace AppPhim
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconSize = 20;
-            this.iconButton1.Location = new System.Drawing.Point(488, 104);
+            this.iconButton1.Location = new System.Drawing.Point(492, 96);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Rotation = 0D;
@@ -317,7 +311,7 @@ namespace AppPhim
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(767, 102);
+            this.label9.Location = new System.Drawing.Point(767, 94);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(83, 23);
             this.label9.TabIndex = 31;
@@ -327,7 +321,7 @@ namespace AppPhim
             // 
             this.luotthich.AutoSize = true;
             this.luotthich.Font = new System.Drawing.Font("Open Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.luotthich.Location = new System.Drawing.Point(744, 102);
+            this.luotthich.Location = new System.Drawing.Point(744, 94);
             this.luotthich.Name = "luotthich";
             this.luotthich.Size = new System.Drawing.Size(28, 23);
             this.luotthich.TabIndex = 30;
@@ -345,7 +339,7 @@ namespace AppPhim
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Heart;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconSize = 20;
-            this.iconButton2.Location = new System.Drawing.Point(723, 104);
+            this.iconButton2.Location = new System.Drawing.Point(723, 96);
             this.iconButton2.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Rotation = 0D;
@@ -357,11 +351,12 @@ namespace AppPhim
             // 
             this.sosao.AutoSize = true;
             this.sosao.Font = new System.Drawing.Font("Open Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sosao.Location = new System.Drawing.Point(326, 101);
+            this.sosao.Location = new System.Drawing.Point(317, 93);
             this.sosao.Name = "sosao";
-            this.sosao.Size = new System.Drawing.Size(19, 23);
+            this.sosao.Size = new System.Drawing.Size(33, 23);
             this.sosao.TabIndex = 27;
-            this.sosao.Text = "0";
+            this.sosao.Text = "0.0";
+            this.sosao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // sao5
             // 
@@ -374,7 +369,7 @@ namespace AppPhim
             this.sao5.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao5.IconColor = System.Drawing.Color.White;
             this.sao5.IconSize = 20;
-            this.sao5.Location = new System.Drawing.Point(426, 102);
+            this.sao5.Location = new System.Drawing.Point(426, 94);
             this.sao5.Margin = new System.Windows.Forms.Padding(0);
             this.sao5.Name = "sao5";
             this.sao5.Rotation = 0D;
@@ -393,7 +388,7 @@ namespace AppPhim
             this.sao4.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao4.IconColor = System.Drawing.Color.White;
             this.sao4.IconSize = 20;
-            this.sao4.Location = new System.Drawing.Point(406, 102);
+            this.sao4.Location = new System.Drawing.Point(406, 94);
             this.sao4.Margin = new System.Windows.Forms.Padding(0);
             this.sao4.Name = "sao4";
             this.sao4.Rotation = 0D;
@@ -412,7 +407,7 @@ namespace AppPhim
             this.sao3.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao3.IconColor = System.Drawing.Color.White;
             this.sao3.IconSize = 20;
-            this.sao3.Location = new System.Drawing.Point(386, 102);
+            this.sao3.Location = new System.Drawing.Point(386, 94);
             this.sao3.Margin = new System.Windows.Forms.Padding(0);
             this.sao3.Name = "sao3";
             this.sao3.Rotation = 0D;
@@ -431,7 +426,7 @@ namespace AppPhim
             this.sao2.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao2.IconColor = System.Drawing.Color.White;
             this.sao2.IconSize = 20;
-            this.sao2.Location = new System.Drawing.Point(366, 102);
+            this.sao2.Location = new System.Drawing.Point(366, 94);
             this.sao2.Margin = new System.Windows.Forms.Padding(0);
             this.sao2.Name = "sao2";
             this.sao2.Rotation = 0D;
@@ -450,7 +445,7 @@ namespace AppPhim
             this.sao1.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao1.IconColor = System.Drawing.Color.White;
             this.sao1.IconSize = 20;
-            this.sao1.Location = new System.Drawing.Point(346, 102);
+            this.sao1.Location = new System.Drawing.Point(346, 94);
             this.sao1.Margin = new System.Windows.Forms.Padding(0);
             this.sao1.Name = "sao1";
             this.sao1.Rotation = 0D;
@@ -464,7 +459,7 @@ namespace AppPhim
             this.dienvien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dienvien.Font = new System.Drawing.Font("Open Sans", 11.25F);
             this.dienvien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dienvien.Location = new System.Drawing.Point(712, 246);
+            this.dienvien.Location = new System.Drawing.Point(712, 238);
             this.dienvien.Name = "dienvien";
             this.dienvien.ReadOnly = true;
             this.dienvien.Size = new System.Drawing.Size(248, 92);
@@ -475,7 +470,7 @@ namespace AppPhim
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(326, 246);
+            this.label17.Location = new System.Drawing.Point(326, 238);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(84, 22);
             this.label17.TabIndex = 21;
@@ -485,7 +480,7 @@ namespace AppPhim
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(616, 246);
+            this.label16.Location = new System.Drawing.Point(616, 238);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(90, 22);
             this.label16.TabIndex = 20;
@@ -495,7 +490,7 @@ namespace AppPhim
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(326, 285);
+            this.label6.Location = new System.Drawing.Point(326, 277);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 22);
             this.label6.TabIndex = 17;
@@ -505,7 +500,7 @@ namespace AppPhim
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(616, 204);
+            this.label14.Location = new System.Drawing.Point(616, 196);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(78, 22);
             this.label14.TabIndex = 16;
@@ -515,7 +510,7 @@ namespace AppPhim
             // 
             this.phathanh.AutoSize = true;
             this.phathanh.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phathanh.Location = new System.Drawing.Point(421, 285);
+            this.phathanh.Location = new System.Drawing.Point(421, 277);
             this.phathanh.Name = "phathanh";
             this.phathanh.Size = new System.Drawing.Size(52, 22);
             this.phathanh.TabIndex = 15;
@@ -526,7 +521,7 @@ namespace AppPhim
             // 
             this.daodien.AutoSize = true;
             this.daodien.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.daodien.Location = new System.Drawing.Point(412, 246);
+            this.daodien.Location = new System.Drawing.Point(412, 238);
             this.daodien.Name = "daodien";
             this.daodien.Size = new System.Drawing.Size(61, 22);
             this.daodien.TabIndex = 14;
@@ -536,7 +531,7 @@ namespace AppPhim
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(326, 204);
+            this.label11.Location = new System.Drawing.Point(326, 196);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(100, 22);
             this.label11.TabIndex = 13;
@@ -546,7 +541,7 @@ namespace AppPhim
             // 
             this.theloai.AutoSize = true;
             this.theloai.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theloai.Location = new System.Drawing.Point(691, 204);
+            this.theloai.Location = new System.Drawing.Point(691, 196);
             this.theloai.Name = "theloai";
             this.theloai.Size = new System.Drawing.Size(52, 22);
             this.theloai.TabIndex = 11;
@@ -556,7 +551,7 @@ namespace AppPhim
             // 
             this.thoiluong.AutoSize = true;
             this.thoiluong.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thoiluong.Location = new System.Drawing.Point(421, 204);
+            this.thoiluong.Location = new System.Drawing.Point(421, 196);
             this.thoiluong.Name = "thoiluong";
             this.thoiluong.Size = new System.Drawing.Size(52, 22);
             this.thoiluong.TabIndex = 7;
@@ -585,6 +580,53 @@ namespace AppPhim
             this.richTextBox_mota.TabIndex = 0;
             this.richTextBox_mota.Text = "";
             // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(0, 25);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(79, 31);
+            this.iconButton3.TabIndex = 11;
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // themyeuthich
+            // 
+            this.themyeuthich.Location = new System.Drawing.Point(516, 132);
+            this.themyeuthich.Name = "themyeuthich";
+            this.themyeuthich.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
+            this.themyeuthich.Size = new System.Drawing.Size(211, 52);
+            this.themyeuthich.StateCommon.Back.Color1 = System.Drawing.Color.Red;
+            this.themyeuthich.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.themyeuthich.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.themyeuthich.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.themyeuthich.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.themyeuthich.StateCommon.Border.Rounding = 12;
+            this.themyeuthich.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Nunito SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themyeuthich.StateNormal.Back.Color1 = System.Drawing.Color.Red;
+            this.themyeuthich.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.themyeuthich.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.themyeuthich.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(86)))), ((int)(((byte)(9)))));
+            this.themyeuthich.TabIndex = 35;
+            this.themyeuthich.Values.Text = "Thêm vào yêu thích";
+            this.themyeuthich.Click += new System.EventHandler(this.themyeuthich_Click);
+            // 
             // CTPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -592,6 +634,7 @@ namespace AppPhim
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(984, 641);
+            this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitleChildForm);
             this.Controls.Add(this.panelDesktop);
@@ -629,7 +672,6 @@ namespace AppPhim
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBox_mota;
@@ -655,6 +697,8 @@ namespace AppPhim
         private FontAwesome.Sharp.IconButton sao3;
         private FontAwesome.Sharp.IconButton sao2;
         private FontAwesome.Sharp.IconButton sao1;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton themyeuthich;
     }
 }
 

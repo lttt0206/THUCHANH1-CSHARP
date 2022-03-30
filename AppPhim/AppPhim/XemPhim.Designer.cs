@@ -39,6 +39,7 @@ namespace AppPhim
             this.iconButton_Close = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.sosao = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@ namespace AppPhim
             this.sao2 = new FontAwesome.Sharp.IconButton();
             this.sao3 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelDesktop.SuspendLayout();
@@ -145,7 +147,7 @@ namespace AppPhim
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 2);
+            this.label2.Location = new System.Drawing.Point(63, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 35);
             this.label2.TabIndex = 2;
@@ -154,6 +156,7 @@ namespace AppPhim
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.iconButton1);
             this.panelDesktop.Controls.Add(this.kryptonButton1);
             this.panelDesktop.Controls.Add(this.sosao);
             this.panelDesktop.Controls.Add(this.label3);
@@ -175,12 +178,32 @@ namespace AppPhim
             this.panelDesktop.TabIndex = 1;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(52)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("Nunito ExtraBold", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.Location = new System.Drawing.Point(0, 0);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(60, 35);
+            this.iconButton1.TabIndex = 11;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(767, 6);
+            this.kryptonButton1.Location = new System.Drawing.Point(833, 10);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.kryptonButton1.Size = new System.Drawing.Size(212, 40);
+            this.kryptonButton1.Size = new System.Drawing.Size(146, 35);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -189,15 +212,16 @@ namespace AppPhim
             this.kryptonButton1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonButton1.StateCommon.Border.Rounding = 5;
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 38;
             this.kryptonButton1.Values.Text = "Thêm vào yêu thích";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // sosao
             // 
             this.sosao.AutoSize = true;
             this.sosao.Font = new System.Drawing.Font("Open Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sosao.Location = new System.Drawing.Point(862, 84);
+            this.sosao.Location = new System.Drawing.Point(857, 84);
             this.sosao.Name = "sosao";
             this.sosao.Size = new System.Drawing.Size(19, 23);
             this.sosao.TabIndex = 36;
@@ -225,13 +249,14 @@ namespace AppPhim
             this.sao4.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao4.IconColor = System.Drawing.Color.White;
             this.sao4.IconSize = 20;
-            this.sao4.Location = new System.Drawing.Point(942, 85);
+            this.sao4.Location = new System.Drawing.Point(933, 85);
             this.sao4.Margin = new System.Windows.Forms.Padding(0);
             this.sao4.Name = "sao4";
             this.sao4.Rotation = 0D;
             this.sao4.Size = new System.Drawing.Size(20, 22);
             this.sao4.TabIndex = 34;
             this.sao4.UseVisualStyleBackColor = false;
+            this.sao4.Click += new System.EventHandler(this.sao4_Click);
             this.sao4.MouseLeave += new System.EventHandler(this.sao4_MouseLeave);
             this.sao4.MouseHover += new System.EventHandler(this.sao4_MouseHover);
             // 
@@ -246,13 +271,14 @@ namespace AppPhim
             this.sao5.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao5.IconColor = System.Drawing.Color.White;
             this.sao5.IconSize = 20;
-            this.sao5.Location = new System.Drawing.Point(962, 85);
+            this.sao5.Location = new System.Drawing.Point(953, 85);
             this.sao5.Margin = new System.Windows.Forms.Padding(0);
             this.sao5.Name = "sao5";
             this.sao5.Rotation = 0D;
             this.sao5.Size = new System.Drawing.Size(20, 22);
             this.sao5.TabIndex = 35;
             this.sao5.UseVisualStyleBackColor = false;
+            this.sao5.Click += new System.EventHandler(this.sao5_Click);
             this.sao5.MouseLeave += new System.EventHandler(this.sao5_MouseLeave);
             this.sao5.MouseHover += new System.EventHandler(this.sao5_MouseHover);
             // 
@@ -265,6 +291,7 @@ namespace AppPhim
             this.MediaPlayer.Size = new System.Drawing.Size(834, 538);
             this.MediaPlayer.TabIndex = 28;
             this.MediaPlayer.ClickEvent += new AxWMPLib._WMPOCXEvents_ClickEventHandler(this.MediaPlayer_ClickEvent);
+            this.MediaPlayer.Enter += new System.EventHandler(this.MediaPlayer_Enter);
             // 
             // sao1
             // 
@@ -277,13 +304,14 @@ namespace AppPhim
             this.sao1.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao1.IconColor = System.Drawing.Color.White;
             this.sao1.IconSize = 20;
-            this.sao1.Location = new System.Drawing.Point(882, 85);
+            this.sao1.Location = new System.Drawing.Point(873, 85);
             this.sao1.Margin = new System.Windows.Forms.Padding(0);
             this.sao1.Name = "sao1";
             this.sao1.Rotation = 0D;
             this.sao1.Size = new System.Drawing.Size(20, 22);
             this.sao1.TabIndex = 31;
             this.sao1.UseVisualStyleBackColor = false;
+            this.sao1.Click += new System.EventHandler(this.sao1_Click);
             this.sao1.MouseLeave += new System.EventHandler(this.sao1_MouseLeave);
             this.sao1.MouseHover += new System.EventHandler(this.sao1_MouseHover);
             // 
@@ -298,13 +326,14 @@ namespace AppPhim
             this.sao2.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao2.IconColor = System.Drawing.Color.White;
             this.sao2.IconSize = 20;
-            this.sao2.Location = new System.Drawing.Point(902, 85);
+            this.sao2.Location = new System.Drawing.Point(893, 85);
             this.sao2.Margin = new System.Windows.Forms.Padding(0);
             this.sao2.Name = "sao2";
             this.sao2.Rotation = 0D;
             this.sao2.Size = new System.Drawing.Size(20, 22);
             this.sao2.TabIndex = 32;
             this.sao2.UseVisualStyleBackColor = false;
+            this.sao2.Click += new System.EventHandler(this.sao2_Click);
             this.sao2.MouseLeave += new System.EventHandler(this.sao2_MouseLeave);
             this.sao2.MouseHover += new System.EventHandler(this.sao2_MouseHover);
             // 
@@ -319,13 +348,14 @@ namespace AppPhim
             this.sao3.IconChar = FontAwesome.Sharp.IconChar.StarO;
             this.sao3.IconColor = System.Drawing.Color.White;
             this.sao3.IconSize = 20;
-            this.sao3.Location = new System.Drawing.Point(922, 85);
+            this.sao3.Location = new System.Drawing.Point(913, 85);
             this.sao3.Margin = new System.Windows.Forms.Padding(0);
             this.sao3.Name = "sao3";
             this.sao3.Rotation = 0D;
             this.sao3.Size = new System.Drawing.Size(20, 22);
             this.sao3.TabIndex = 33;
             this.sao3.UseVisualStyleBackColor = false;
+            this.sao3.Click += new System.EventHandler(this.sao3_Click);
             this.sao3.MouseLeave += new System.EventHandler(this.sao3_MouseLeave);
             this.sao3.MouseHover += new System.EventHandler(this.sao3_MouseHover);
             // 
@@ -339,6 +369,11 @@ namespace AppPhim
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             this.label1.Visible = false;
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
             // XemPhim
             // 
@@ -391,6 +426,8 @@ namespace AppPhim
         private FontAwesome.Sharp.IconButton sao2;
         private FontAwesome.Sharp.IconButton sao3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

@@ -12,13 +12,15 @@ using FontAwesome.Sharp;
 
 namespace AppPhim
 {
-    public partial class Phimle: KryptonForm
+    public partial class Timkiem: KryptonForm
     {
-        public Phimle()
+        string strNhan;
+        public Timkiem()
         {
             InitializeComponent();
+            tukhoa.Text = strNhan;
             Xuly_Data s = new Xuly_Data();
-            List<Phim> list = s.sqlGetPhim("Phimle");
+            List<Phim> list = s.timkiem(strNhan);
             int i = 0;
 
             if (list.Count > i)
@@ -168,8 +170,14 @@ namespace AppPhim
             }
         }
 
-        private void Anime_Load(object sender, EventArgs e)
+        public string Message
         {
+            get { return strNhan; }
+            set { strNhan = value; }
+        }
+        private void Timkiem_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -177,7 +185,7 @@ namespace AppPhim
             if (!label1.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[0].idphim.ToString();
                 ct.Show();
@@ -189,7 +197,7 @@ namespace AppPhim
             if (!label2.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[1].idphim.ToString();
                 ct.Show();
@@ -201,7 +209,7 @@ namespace AppPhim
             if (!label3.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[2].idphim.ToString();
                 ct.Show();
@@ -213,7 +221,7 @@ namespace AppPhim
             if (!label4.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[3].idphim.ToString();
                 ct.Show();
@@ -225,7 +233,7 @@ namespace AppPhim
             if (!label12.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[11].idphim.ToString();
                 ct.Show();
@@ -237,7 +245,7 @@ namespace AppPhim
             if (!label5.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[4].idphim.ToString();
                 ct.Show();
@@ -249,7 +257,7 @@ namespace AppPhim
             if (!label6.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[5].idphim.ToString();
                 ct.Show();
@@ -261,7 +269,7 @@ namespace AppPhim
             if (!label7.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[6].idphim.ToString();
                 ct.Show();
@@ -273,7 +281,7 @@ namespace AppPhim
             if (!label8.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[7].idphim.ToString();
                 ct.Show();
@@ -285,7 +293,7 @@ namespace AppPhim
             if (!label9.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[9].idphim.ToString();
                 ct.Show();
@@ -297,7 +305,7 @@ namespace AppPhim
             if (!label10.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[9].idphim.ToString();
                 ct.Show();
@@ -309,7 +317,7 @@ namespace AppPhim
             if (!label11.Text.Equals(""))
             {
                 Xuly_Data s = new Xuly_Data();
-                List<Phim> list = s.sqlGetPhim("Phimle");
+                List<Phim> list = s.sqlGetPhim("Anime");
                 CTPhim ct = new CTPhim();
                 ct.Message = list[10].idphim.ToString();
                 ct.Show();

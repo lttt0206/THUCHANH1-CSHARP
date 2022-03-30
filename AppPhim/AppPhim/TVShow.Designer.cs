@@ -137,9 +137,8 @@ namespace AppPhim
             // label_trong
             // 
             this.label_trong.AutoSize = true;
-            this.label_trong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_trong.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_trong.Location = new System.Drawing.Point(0, 0);
+            this.label_trong.Location = new System.Drawing.Point(14, 10);
             this.label_trong.Margin = new System.Windows.Forms.Padding(0);
             this.label_trong.Name = "label_trong";
             this.label_trong.Size = new System.Drawing.Size(51, 19);

@@ -20,9 +20,10 @@ namespace AppPhim
         public string linkphim { get; set; }
         public int phathanh { get; set; }
         public string thoiluong { get; set; }
-        public int sao { get; set; }
+        public float sao { get; set; }
         public int luotxem { get; set; }
         public int yeuthich { get; set; }
+        public int luotdanhgia { get; set; }
 
     }
 }

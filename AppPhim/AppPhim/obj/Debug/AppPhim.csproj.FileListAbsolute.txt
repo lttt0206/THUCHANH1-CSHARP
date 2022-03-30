@@ -32,3 +32,7 @@ C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Chieurap.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.TVShow.resources
 C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Phimle.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Notification.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.TaikhoanUI.resources
+C:\Users\Admin\Documents\LYTHANHTHAO\DocumentonUniversity\HKII_III\Csharp\BAITAP\THUCHANH1\AppPhim\AppPhim\obj\Debug\AppPhim.Timkiem.resources

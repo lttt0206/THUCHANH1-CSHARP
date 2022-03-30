@@ -137,9 +137,8 @@ namespace AppPhim
             // label_trong
             // 
             this.label_trong.AutoSize = true;
-            this.label_trong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_trong.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_trong.Location = new System.Drawing.Point(0, 0);
+            this.label_trong.Location = new System.Drawing.Point(13, 9);
             this.label_trong.Margin = new System.Windows.Forms.Padding(0);
             this.label_trong.Name = "label_trong";
             this.label_trong.Size = new System.Drawing.Size(51, 19);
@@ -150,6 +149,7 @@ namespace AppPhim
             // 
             this.panel12.Controls.Add(this.label12);
             this.panel12.Controls.Add(this.pictureBox12);
+            this.panel12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel12.Location = new System.Drawing.Point(817, 251);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(143, 244);
@@ -159,6 +159,7 @@ namespace AppPhim
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(3, 209);
             this.label12.Name = "label12";
@@ -169,6 +170,7 @@ namespace AppPhim
             // 
             // pictureBox12
             // 
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Location = new System.Drawing.Point(0, 0);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(143, 206);
@@ -180,6 +182,7 @@ namespace AppPhim
             // 
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.pictureBox11);
+            this.panel11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel11.Location = new System.Drawing.Point(655, 251);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(143, 244);
@@ -189,6 +192,7 @@ namespace AppPhim
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(3, 209);
             this.label11.Name = "label11";
@@ -199,6 +203,7 @@ namespace AppPhim
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Location = new System.Drawing.Point(0, 0);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(143, 206);
@@ -210,6 +215,7 @@ namespace AppPhim
             // 
             this.panel10.Controls.Add(this.label10);
             this.panel10.Controls.Add(this.pictureBox10);
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel10.Location = new System.Drawing.Point(493, 251);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(143, 244);
@@ -219,6 +225,7 @@ namespace AppPhim
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(3, 209);
             this.label10.Name = "label10";
@@ -229,6 +236,7 @@ namespace AppPhim
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Location = new System.Drawing.Point(0, 0);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(143, 206);
@@ -240,6 +248,7 @@ namespace AppPhim
             // 
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.pictureBox9);
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel9.Location = new System.Drawing.Point(335, 251);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(143, 244);
@@ -249,6 +258,7 @@ namespace AppPhim
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(3, 209);
             this.label9.Name = "label9";
@@ -259,6 +269,7 @@ namespace AppPhim
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(143, 206);
@@ -270,6 +281,7 @@ namespace AppPhim
             // 
             this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.pictureBox8);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel8.Location = new System.Drawing.Point(176, 251);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(143, 244);
@@ -279,6 +291,7 @@ namespace AppPhim
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(3, 209);
             this.label8.Name = "label8";
@@ -289,6 +302,7 @@ namespace AppPhim
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Location = new System.Drawing.Point(0, 0);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(143, 206);
@@ -300,6 +314,7 @@ namespace AppPhim
             // 
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.pictureBox7);
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Location = new System.Drawing.Point(18, 251);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(143, 244);
@@ -309,6 +324,7 @@ namespace AppPhim
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 209);
             this.label7.Name = "label7";
@@ -319,6 +335,7 @@ namespace AppPhim
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Location = new System.Drawing.Point(0, 0);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(143, 206);
@@ -330,6 +347,7 @@ namespace AppPhim
             // 
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel6.Location = new System.Drawing.Point(817, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(143, 244);
@@ -339,6 +357,7 @@ namespace AppPhim
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 209);
             this.label6.Name = "label6";
@@ -349,6 +368,7 @@ namespace AppPhim
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(143, 206);
@@ -360,6 +380,7 @@ namespace AppPhim
             // 
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel5.Location = new System.Drawing.Point(655, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(143, 244);
@@ -369,6 +390,7 @@ namespace AppPhim
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 209);
             this.label5.Name = "label5";
@@ -379,6 +401,7 @@ namespace AppPhim
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(143, 206);
@@ -390,6 +413,7 @@ namespace AppPhim
             // 
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel4.Location = new System.Drawing.Point(493, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(143, 244);
@@ -399,6 +423,7 @@ namespace AppPhim
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 209);
             this.label4.Name = "label4";
@@ -409,6 +434,7 @@ namespace AppPhim
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(143, 206);
@@ -420,6 +446,7 @@ namespace AppPhim
             // 
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel3.Location = new System.Drawing.Point(335, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(143, 244);
@@ -429,6 +456,7 @@ namespace AppPhim
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 209);
             this.label3.Name = "label3";
@@ -439,6 +467,7 @@ namespace AppPhim
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(143, 206);
@@ -450,6 +479,7 @@ namespace AppPhim
             // 
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Location = new System.Drawing.Point(176, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(143, 244);
@@ -459,6 +489,7 @@ namespace AppPhim
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 209);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
@@ -470,6 +501,7 @@ namespace AppPhim
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(143, 206);
@@ -481,6 +513,7 @@ namespace AppPhim
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(18, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 244);
@@ -490,6 +523,7 @@ namespace AppPhim
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 209);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
@@ -501,6 +535,7 @@ namespace AppPhim
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 206);
